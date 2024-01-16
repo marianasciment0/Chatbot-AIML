@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Desculpe, ainda não possuo resposta para isso...</template>
+  </category>
+<category>
+    <pattern>SAUDAÇÃO</pattern>
+    <template>Olá! </template>
+</category>
+
+<category><pattern>OLA</pattern><template><srai>SAUDAÇÃO</srai></template></category>
+<category><pattern>OLÁ</pattern><template><srai>SAUDAÇÃO</srai></template></category>
+<category><pattern>OI</pattern><template><srai>SAUDAÇÃO</srai></template></category>
+<category><pattern>OPA</pattern><template><srai>SAUDAÇÃO</srai></template></category>
+<category><pattern>EAI</pattern><template><srai>SAUDAÇÃO</srai></template></category>
+<category><pattern>SAUDAÇOES</pattern><template><srai>SAUDAÇÃO</srai></template></category>
+<category><pattern>SAUDAÇÕES</pattern><template><srai>SAUDAÇÃO</srai></template></category>
+
+<category>
+    <pattern>QUEM VOCE É</pattern>
+    <template>Eu sou o ADABot. Digite e envie "Ajuda" para acessar minhas funcionalidades</template>
+</category>
+
+<category><pattern>QUEM E VOCE</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUEM É VOCÊ</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUEM É VOCE</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUEM E VOCÊ</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUEM VOCE E</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUEM VOCÊ E</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUEM VOCÊ É</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUAL O SEU NOME</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUAL E O SEU NOME</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUAL É O SEU NOME</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>QUAL SEU NOME</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>SEU NOME E</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>SEU NOME É</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>COMO SE CHAMA</pattern><template><srai>QUEM VOCE É</srai></template></category>
+<category><pattern>SE CHAMA COMO</pattern><template><srai>QUEM VOCE É</srai></template></category>
+
+<!--- Ajuda -->
+<category><pattern>AJUDA</pattern><template><srai>HELP</srai></template></category>
+<category><pattern>DUVIDA</pattern><template><srai>HELP</srai></template></category>
+<category><pattern>DÚVIDA</pattern><template><srai>HELP</srai></template></category>
+<category><pattern>NÃO CONSIGO FAZER</pattern><template><srai>HELP</srai></template></category>
+<category><pattern>NAO CONSIGO FAZER</pattern><template><srai>HELP</srai></template></category>
+<category><pattern>PRECISO DE AJUDA</pattern><template><srai>HELP</srai></template></category>
+<category><pattern>ESTOU COM DÚVIDAS</pattern><template><srai>HELP</srai></template></category>
+<category><pattern>ESTOU COM DUVIDAS</pattern><template><srai>HELP</srai></template></category>
+
+<category>
+    <pattern>HELP</pattern>
+    <template>Em qual questão posso te ajudar?</template>
+</category>
+
+<!---Resposta que leva às opções de resposta-->
+<category><pattern>17</pattern><template><srai>NUMQUESTAO</srai></template></category>
+
+<!--- Opções -->
+<category>
+    <pattern>NUMQUESTAO</pattern>
+    <template>Certo! Selecione o número que corresponde a sua dúvida?: 1 - Compreensão da questão   2 - Declaração das variáveis   3 - Cálculo </template>
+</category>
+
+
+<!--- Resposta 1 -->
+<category><pattern>UM</pattern><template><srai>COMPREENSAO</srai></template></category>
+<category><pattern>1</pattern><template><srai>COMPREENSAO</srai></template></category>
+<category><pattern>NUMERO UM</pattern><template><srai>COMPREENSAO</srai></template></category>
+<category><pattern>PRIMEIRA</pattern><template><srai>COMPREENSAO</srai></template></category>
+<category><pattern>PRIMEIRO</pattern><template><srai>COMPREENSAO</srai></template></category>
+
+<category>
+<pattern>COMPREENSAO</pattern>
+<template>
+    Imagine que você está escrevendo um programa para uma loja que vende carros usados. Os vendedores dessa loja recebem um salário fixo por mês, uma quantia adicional por cada carro que eles vendem e ainda ganham uma comissão de 5% sobre o valor total das vendas que eles realizam. Você vai criar um programa para calcular o salário final de um desses vendedores.
+Posso ajudar em algo mais?
+</template>
+</category>
+
+
+<!--- Resposta 2 -->
+<category><pattern>DOIS</pattern><template><srai>DECLARACAO</srai></template></category>
+<category><pattern>2</pattern><template><srai>DECLARACAO</srai></template></category>
+<category><pattern>NUMERO DOIS</pattern><template><srai>DECLARACAO</srai></template></category>
+<category><pattern>SEGUNDA</pattern><template><srai>DECLARACAO</srai></template></category>
+<category><pattern>SEGUNDO</pattern><template><srai>DECLARACAO</srai></template></category>
+
+<category>
+    <pattern>DECLARACAO</pattern>
+    <template>No programa, você deve declarar as variáveis de entrada da seguinte
+maneira:
+num_carros_vendidos = int(input("Digite o número de carros vendidos: "))
+valor_total_vendas = float(input("Digite o valor total das vendas: "))
+salario_fixo = float(input("Digite o salário fixo: "))
+valor_por_carro = float(input("Digite o valor que ele recebe por carro vendido: "))
+Essas variáveis (num_carros_vendidos, valor_total_vendas, salario_fixo,
+valor_por_carro) serão usadas para armazenar os dados fornecidos pelo usuário.
+Mais alguma dúvida?
+</template>
+</category>
+
+
+<!--- Resposta 3-->
+<category><pattern>TRES</pattern><template><srai>CALCULO</srai></template></category>
+<category><pattern>TRÊS</pattern><template><srai>CALCULO</srai></template></category>
+<category><pattern>3</pattern><template><srai>CALCULO</srai></template></category>
+<category><pattern>NUMERO TRES</pattern><template><srai>CALCULO</srai></template></category>
+<category><pattern>NUMERO TRÊS</pattern><template><srai>CALCULO</srai></template></category>
+<category><pattern>TERCEIRA</pattern><template><srai>CALCULO</srai></template></category>
+<category><pattern>TERCEIRO</pattern><template><srai>CALCULO</srai></template></category>
+
+<category>
+    <pattern>CALCULO</pattern>
+    <template>Você pode calcular o salário final do vendedor usando a fórmula:
+
+comissao = 0.05 * valor_total_vendas
+salario_final = salario_fixo + (num_carros_vendidos * valor_por_carro)
+Restaram dúvidas?
+</template>
+</category>
+
+<!-- Continuar ou encerrar -->
+<category><pattern>SIM</pattern><template><srai>NUMQUESTAO</srai></template></category>
+<category><pattern>S</pattern><template><srai>NUMQUESTAO</srai></template></category>
+<category><pattern>N</pattern><template><srai>DESPEDIDA</srai></template></category>
+<category><pattern>NAO</pattern><template><srai>DESPEDIDA</srai></template></category>
+<category><pattern>NÃO</pattern><template><srai>DESPEDIDA</srai></template></category>
+
+<!--- Despedida -->
+<category>
+    <pattern>DESPEDIDA</pattern>
+    <template>Obrigado por utilizar o ADAbot. Espero que tenha gostado!
+</template>
+</category>
+</aiml>
